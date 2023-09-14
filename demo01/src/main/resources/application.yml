@@ -1,0 +1,56 @@
+spring:
+  application:
+    name: Demo1
+  boot:
+    admin:
+      context-path: /admin
+      client:
+        url: http://localhost:${server.port}${spring.boot.admin.context-path}
+        auto-registration: true
+        enabled: true
+        api-path: instances
+        instance:
+          health-url: http://localhost:${management.server.port}/actuator/health
+          service-url: http://localhost:${server.port}/
+          management-url: http://localhost:${management.server.port}/actuator
+#          name: ${spring.application.name}
+      monitor:
+        status-interval: 3s
+        status-lifetime: 3s
+        default-timeout: 5000ms
+      ui:
+        theme:
+          background-enabled: true
+          color: #0A2F2B
+        external-views:
+          - label: "自定义TAB->百度"
+            url: https://www.baidu.com
+            order: 2000
+#      notify:
+#        mail:
+#          to: zurkbob@gmail.com
+#        pagerduty:
+#          client:
+#  mail:
+#    port: 1025
+#    host: mailhog-service.shoppingdemo
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  server:
+    port: 10111
+#    ssl:
+#      enabled: false
+#    base-path: /
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+server:
+  tomcat:
+    mbeanregistry:
+      enabled: true
+  port: 8080
