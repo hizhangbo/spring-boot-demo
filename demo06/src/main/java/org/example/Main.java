@@ -11,7 +11,8 @@ public class Main {
         try {
 //            tesseract.setDatapath("classpath://tessdata");
             tesseract.setDatapath("D:\\code\\spring-boot-demo\\demo06\\src\\main\\resources\\tessdata");
-            tesseract.setLanguage("chi_sim");
+//            tesseract.setLanguage("chi_sim");
+            tesseract.setLanguage("bank");
 
             // the path of your tess data folder
             // inside the extracted file
