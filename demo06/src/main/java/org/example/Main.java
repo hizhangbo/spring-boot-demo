@@ -15,13 +15,13 @@ public class Main {
         Tesseract tesseract = new Tesseract();
         try {
 //            tesseract.setDatapath("classpath://tessdata");
-            tesseract.setDatapath("D:\\code\\spring-boot-demo\\demo06\\src\\main\\resources\\tessdata");
+            tesseract.setDatapath("D:\\code\\github\\spring-boot-demo\\demo06\\src\\main\\resources\\tessdata\\tessdata");
 //            tesseract.setLanguage("chi_sim");
-            tesseract.setLanguage("bank");
+            tesseract.setLanguage("money");
 
             // the path of your tess data folder
             // inside the extracted file
-            final File file = new File("C:\\Users\\larry.zhang\\Desktop\\11.jpg");
+            final File file = new File("E:\\data\\回单原图\\money\\19.jpg");
             String text = tesseract.doOCR(file);
 
             // path of your image file
