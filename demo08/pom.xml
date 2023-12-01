@@ -33,6 +33,10 @@
             <plugin>
                 <groupId>org.graalvm.buildtools</groupId>
                 <artifactId>native-maven-plugin</artifactId>
+                <configuration>
+                    <skipNativeTests>true</skipNativeTests>
+                    <mainClass>io.github.hizhangbo.Demo08</mainClass>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
