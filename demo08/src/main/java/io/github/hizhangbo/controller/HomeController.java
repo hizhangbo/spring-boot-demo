@@ -9,6 +9,7 @@ public class HomeController {
 
     @GetMapping
     public ResponseEntity<String> index() {
+        System.out.println("thread: " + Thread.currentThread().getName());
         return ResponseEntity.ok("index");
     }
 }

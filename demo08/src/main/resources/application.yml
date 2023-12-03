@@ -1,2 +1,11 @@
+spring:
+  threads:
+    virtual:
+      enabled: false
+
 server:
   port: 8081
+  tomcat:
+    threads:
+      min-spare: 100
+      max: 200
