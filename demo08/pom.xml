@@ -53,6 +53,9 @@
                 <configuration>
                     <skipNativeTests>true</skipNativeTests>
                     <mainClass>io.github.hizhangbo.Demo08</mainClass>
+                    <buildArgs>
+                        <buildArg>--gc=G1</buildArg>
+                    </buildArgs>
                 </configuration>
             </plugin>
             <plugin>
