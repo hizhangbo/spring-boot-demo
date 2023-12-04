@@ -60,6 +60,7 @@
                         <buildArg>-H:+StrictImageHeap</buildArg>
                         <buildArg>-march=native</buildArg>
                         <buildArg>-Ob</buildArg>
+                        <buildArg>-Xmx64m</buildArg>
                     </buildArgs>
                 </configuration>
             </plugin>
