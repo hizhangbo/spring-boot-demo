@@ -55,7 +55,8 @@
                     <mainClass>io.github.hizhangbo.Demo08</mainClass>
                     <buildArgs>
                         <buildArg>--gc=G1</buildArg>
-                        <buildArg>--pgo</buildArg>
+                        <!-- PGO配置文件引导优化 -->
+<!--                        <buildArg>&#45;&#45;pgo</buildArg>-->
                         <buildArg>-H:+StrictImageHeap</buildArg>
                         <buildArg>-march=native</buildArg>
                         <buildArg>-Ob</buildArg>
